@@ -1,0 +1,11 @@
+{
+    "NRF52_MICROBIT": {
+        "inherits": ["MCU_NRF52832"],
+        "release_versions": ["5"],
+        "device_name": "nRF52832_xxAA",
+        "device_has_remove": ["ITM"],
+        "overrides": {
+            "lf_clock_src": "NRF_LF_SRC_RC"
+        }
+    }
+}

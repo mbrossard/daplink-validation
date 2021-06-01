@@ -1,7 +1,8 @@
 TARGETS = \
 	K64F \
 	LPC55S69_NS \
-	MAX32630FTHR
+	MAX32630FTHR \
+	NRF52_MICROBIT
 
 all: $(patsubst %, dist/%.hex, $(TARGETS))
 

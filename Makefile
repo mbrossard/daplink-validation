@@ -1,9 +1,18 @@
-TARGETS = K64F
+TARGETS = \
+	K64F \
+	LPC55S69_NS \
+	MAX32630FTHR
 
-ELFS = $(patsubst %, BUILD/%/GCC_ARM/daplink-validation.elf, $(TARGETS))
+all: $(patsubst %, dist/%.hex, $(TARGETS))
 
-all: $(ELFS)
+dist/%.hex: BUILD/%/GCC_ARM-RELEASE/daplink-validation.elf
+	@mkdir -p dist
+	arm-none-eabi-objcopy -O ihex $< $@
+	arm-none-eabi-objcopy -O binary $< $@
 
-BUILD/%/GCC_ARM/daplink-validation.elf:
-	mbed compile -m $*
+dist/%.bin: dist/%.hex
 
+BUILD/%/GCC_ARM-RELEASE/daplink-validation.elf: source/main.cpp mbed_app.json custom_targets.json
+	mbed compile -m $* --profile release
+
+.PRECIOUS: BUILD/%/GCC_ARM-RELEASE/daplink-validation.elf

@@ -16,6 +16,9 @@
         },
         "NRF51_MICROBIT": {
             "target.device_has_add": ["USTICKER"]
+        },
+        "NRF52840_DK": {
+            "target.features_remove": ["CRYPTOCELL310", "BLE"]
         }
     }
 }

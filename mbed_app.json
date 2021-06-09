@@ -11,6 +11,9 @@
             "platform.stdio-baud-rate": 115200,
             "platform.stdio-minimal-console-only": true
         },
+        "ARCH_BLE": {
+            "target.device_has_add": ["USTICKER"]
+        },
         "NRF51822": {
             "target.device_has_add": ["USTICKER"]
         },

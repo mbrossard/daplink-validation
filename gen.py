@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 targets = {
+    "FRDM-K22F":                 "K22F",
     "FRDM-K64F":                 "K64F",
+    "FRDM-K66F":                 "K66F",
+    "FRDM-K82F":                 "K82F",
     "LPCXpresso55S69":           "LPC55S69_NS",
     "MAX32630":                  "MAX32630FTHR",
     "Nordic-nRF51822":           "NRF51822",

@@ -85,6 +85,22 @@ typedef enum {
     p29 = 29,
     p30 = 30,
     p31 = 31,
+    p32 = 32,
+    p33 = 33,
+    p34 = 34,
+    p35 = 35,
+    p36 = 36,
+    p37 = 37,
+    p38 = 38,
+    p39 = 39,
+    p40 = 40,
+    p41 = 41,
+    p42 = 42,
+    p43 = 43,
+    p44 = 44,
+    p45 = 45,
+    p46 = 46,
+    p47 = 47,
 
     P0_0  = p0,
     P0_1  = p1,
@@ -122,32 +138,67 @@ typedef enum {
     P0_30 = p30,
     P0_31 = p31,
 
-    LED1    = p17,
-    LED2    = p18,
-    LED3    = p19,
-    LED4    = p20,
+    P1_0 = p32,
+    P1_1 = p33,
+    P1_2 = p34,
+    P1_3 = p35,
+    P1_4 = p36,
+    P1_5 = p37,
+    P1_6 = p38,
+    P1_7 = p39,
+
+    P1_8 = p40,
+    P1_9 = p41,
+    P1_10 = p42,
+    P1_11 = p43,
+    P1_12 = p44,
+    P1_13 = p45,
+    P1_14 = p46,
+    P1_15 = p47,
+
+    // LED in the nRF52833 DK board
+    LED1 = P0_13,
 
     // Buttons A and B
     BUTTON1 = P0_14,
-    BUTTON2 = P0_15,
+    BUTTON2 = P0_23,
     BUTTONA = BUTTON1,
     BUTTONB = BUTTON2,
 
     // LED matrix
     ROW_1 = P0_21,
     ROW_2 = P0_22,
-    ROW_3 = P0_23,
+    ROW_3 = P0_15,
     ROW_4 = P0_24,
-    ROW_5 = P0_13,
-    COL_1 = P0_1,
+    ROW_5 = P0_19,
+    COL_1 = P0_28,
     COL_2 = P0_11,
-    COL_3 = P0_30,
-    COL_4 = P0_12,
-    COL_5 = P0_7,
-    COL_6 = P0_31,
+    COL_3 = P0_31,
+    COL_4 = P1_5,
+    COL_5 = P0_30,
 
-    RX_PIN_NUMBER  = P0_8,
-    TX_PIN_NUMBER  = P0_16,
+    // RING
+    RING0 = P0_2,
+    RING1 = P0_3,
+    RING2 = P0_4,
+
+    // GPIO
+    GPIO1 = P0_10,
+    GPIO2 = P0_9,
+    GPIO3 = P1_2,
+    GPIO4 = P0_12,
+
+    // Audio
+    SPEAKER = P0_0,
+    MIC = P0_5,
+    RUN_MIC = P0_20,
+
+    // Other micro:bit specific pins
+    COMBINED_SENSOR_INT = P0_25,
+
+    // UART
+    RX_PIN_NUMBER  = P1_8,
+    TX_PIN_NUMBER  = P0_6,
     CTS_PIN_NUMBER = p7,
     RTS_PIN_NUMBER = p5,
 
@@ -159,16 +210,32 @@ typedef enum {
     STDIO_UART_CTS = CTS_PIN_NUMBER,
     STDIO_UART_RTS = RTS_PIN_NUMBER,
 
-    SPI_PSELMOSI0 = P0_19,
-    SPI_PSELMISO0 = P0_18,
-    SPI_PSELSS0   = P0_10,
+    SPI_PSELMOSI0 = P0_13,
+    SPI_PSELMISO0 = P0_1,
+    SPI_PSELSS0   = P1_2,
     SPI_PSELSCK0  = P0_17,
 
     I2C_SDA0 = P0_16,
     I2C_SCL0 = P0_8,
 
-    I2C_SDA1 = P0_27,
+    I2C_SDA1 = P1_0,
     I2C_SCL1 = P0_26,
+
+    /**** QSPI pins ****/
+    QSPI1_IO0 = P0_20,
+    QSPI1_IO1 = P0_21,
+    QSPI1_IO2 = P0_22,
+    QSPI1_IO3 = P0_23,
+    QSPI1_SCK = P0_19,
+    QSPI1_CSN = P0_17,
+
+    /**** QSPI FLASH pins ****/
+    QSPI_FLASH1_IO0 = QSPI1_IO0,
+    QSPI_FLASH1_IO1 = QSPI1_IO1,
+    QSPI_FLASH1_IO2 = QSPI1_IO2,
+    QSPI_FLASH1_IO3 = QSPI1_IO3,
+    QSPI_FLASH1_SCK = QSPI1_SCK,
+    QSPI_FLASH1_CSN = QSPI1_CSN,
 
     // Not connected
     NC = (int)0xFFFFFFFF

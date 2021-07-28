@@ -6,6 +6,8 @@ targets = {
     "FRDM-K82F":                 "K82F",
     "LPCXpresso55S69":           "LPC55S69_NS",
     "MAX32630":                  "MAX32630FTHR",
+    "Microbit":                  "NRF51_MICROBIT",
+    "Microbitv2":                "NRF52_MICROBIT",
     "Nordic-nRF51822":           "NRF51822",
     "Nordic-nRF51-DK":           "NRF51_DK",
     "Nordic-nRF52-DK":           "NRF52_DK",

@@ -1,6 +1,9 @@
 
-build: .targets.mk
+build:
+	$(MAKE) .targets.mk
 	$(MAKE) all
+
+.PHONY: build
 
 -include .targets.mk
 

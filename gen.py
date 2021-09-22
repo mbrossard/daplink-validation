@@ -12,8 +12,9 @@ targets = {
     "Nordic-nRF51-DK":           "NRF51_DK",
     "Nordic-nRF52-DK":           "NRF52_DK",
     "Nordic-nRF52840-DK":        "NRF52840_DK",
-    "ST-Nucleo-F401RE":          "NUCLEO_F401RE",
     "Seeed-Arch-BLE":            "ARCH_BLE",
+    "Seeed-Arch-Link":           "ARCH_LINK",
+    "ST-Nucleo-F401RE":          "NUCLEO_F401RE",
 }
 
 header = r"""# Generated file do not edit

@@ -41,7 +41,7 @@ with open('.targets.mk', 'w') as f:
         f.write(r"""dist/%s.hex: BUILD/%s/GCC_ARM-RELEASE/daplink-validation.elf
 	@mkdir -p dist
 	arm-none-eabi-objcopy -O ihex $< $@
-	arm-none-eabi-objcopy -O binary $< dist/%s.bin
+	arm-none-eabi-objcopy -O binary --gap-fill=0xff $< dist/%s.bin
 
 """ % (k, v, k))
     f.write(footer)

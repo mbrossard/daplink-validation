@@ -1,9 +1,12 @@
 #!/usr/bin/env python
 targets = {
+    "EA-LPC4088":                "LPC4088",
     "FRDM-K22F":                 "K22F",
     "FRDM-K64F":                 "K64F",
     "FRDM-K66F":                 "K66F",
     "FRDM-K82F":                 "K82F",
+    "LPCXpresso4367":            "LPC4330_M4",
+    "LPCXpresso54608":           "LPC546XX",
     "LPCXpresso55S69":           "LPC55S69_NS",
     "MAX32620":                  "MAX32620FTHR",
     "MAX32625":                  "MAX32625MBED",

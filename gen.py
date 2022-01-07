@@ -5,6 +5,8 @@ targets = {
     "FRDM-K66F":                 "K66F",
     "FRDM-K82F":                 "K82F",
     "LPCXpresso55S69":           "LPC55S69_NS",
+    "MAX32620":                  "MAX32620FTHR",
+    "MAX32625":                  "MAX32625MBED",
     "MAX32630":                  "MAX32630FTHR",
     "MIMXRT1050":                "MIMXRT1050_EVK",
     "Microbit":                  "NRF51_MICROBIT",

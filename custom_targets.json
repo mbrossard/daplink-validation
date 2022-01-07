@@ -59,11 +59,5 @@
             "CONFIG_GPIO_AS_PINRESET"
         ],
         "device_has_remove": ["ITM"]
-    },
-    "MIMXRT1050_QSPI": {
-        "inherits": ["MIMXRT1050_EVK"],
-        "macros_remove": [
-            "HYPERFLASH_BOOT"
-        ]
     }
 }

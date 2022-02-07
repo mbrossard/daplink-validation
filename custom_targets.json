@@ -59,6 +59,7 @@
             "CONFIG_GPIO_AS_PINRESET"
         ],
         "device_has_remove": ["ITM"]
+    },
     "LPC4337_EVK": {
         "inherits": ["LPC4330_M4"],
         "detect_code": ["4337"]

@@ -60,6 +60,10 @@
         ],
         "device_has_remove": ["ITM"]
     },
+    "LPC4367_EVK": {
+        "inherits": ["LPC4330_M4"],
+        "detect_code": ["4367"]
+    },
     "LPC4337_EVK": {
         "inherits": ["LPC4330_M4"],
         "detect_code": ["4337"]

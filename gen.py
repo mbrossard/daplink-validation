@@ -7,6 +7,7 @@ targets = {
     "FRDM-K82F":                 "K82F",
     "LPCXpresso4337":            "LPC4337_EVK",
     "LPCXpresso4367":            "LPC4330_M4",
+    "LPCXpresso54114":           "LPC54114",
     "LPCXpresso54608":           "LPC546XX",
     "LPCXpresso55S69":           "LPC55S69_NS",
     "MAX32620":                  "MAX32620FTHR",

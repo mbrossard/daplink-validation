@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 targets = {
     "EA-LPC4088":                "LPC4088",
+    "EA-LPC4088-Display-Module": "LPC4088_DM",
     "FRDM-K22F":                 "K22F",
     "FRDM-K64F":                 "K64F",
     "FRDM-K66F":                 "K66F",
